@@ -36,7 +36,7 @@ public class Bank {
         return osszeg;
     }
 
-    public Szamla LegnagyobbEgyenleguSzamla(Tulajdonos tulajdonos) {
+    public Szamla legnagyobbEgyenleguSzamla(Tulajdonos tulajdonos) {
         int legnagyobb = 0;
         Szamla legnagyobbSzamla = szamlaLista.get(0);
 
