@@ -10,6 +10,10 @@ public class Bank {
         this.szamlaLista = new ArrayList<>(max);
     }
 
+    public Szamla getSzamlaByIndex(int index) {
+        return szamlaLista.get(index);
+    }
+
     public Szamla szamlanyitas(Tulajdonos tulajdonos, int hitelKeret) {
         Szamla ujSzamla;
         if (hitelKeret < 0) {
