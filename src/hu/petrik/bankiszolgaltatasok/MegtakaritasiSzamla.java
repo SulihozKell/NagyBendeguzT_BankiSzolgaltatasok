@@ -27,6 +27,6 @@ public class MegtakaritasiSzamla extends Szamla {
     }
 
     public void kamatJovairas() {
-        aktualisEgyenleg *= 1+kamat/100;
+        aktualisEgyenleg *= 1 + (kamat / 100);
     }
 }
