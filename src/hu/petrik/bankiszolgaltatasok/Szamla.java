@@ -1,7 +1,7 @@
 package hu.petrik.bankiszolgaltatasok;
 
-public class Szamla extends BankiSzolgaltatas {
-    private int aktualisEgyenleg;
+public abstract class Szamla extends BankiSzolgaltatas {
+    protected int aktualisEgyenleg;
 
     public Szamla(Tulajdonos tulajdonos) {
         super(tulajdonos);
@@ -16,10 +16,7 @@ public class Szamla extends BankiSzolgaltatas {
         this.aktualisEgyenleg += osszeg;
     }
 
-    // JAVÍT
-    public boolean kivesz(int osszeg) {
-        return false;
-    }
+    public abstract boolean kivesz(int osszeg);
 
     // ujKartya
 }
